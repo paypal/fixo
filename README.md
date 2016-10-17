@@ -9,7 +9,7 @@ With `Fixo`, you could:
 * set the `default` property values to be shared with the rest of the object properties
 * compose an object from different sources with different `profiles`
 
-The core of `fixo` is the `resolvers` and `macros`. `Resolvers` allow you to transform an object property value as a whole, while `mcaros` allow you to replace parts of a string value with dynamic content.
+The core of `fixo` is the `resolvers` and `macros`. `Resolvers` allow you to transform an object property value as a whole, while `macros` allow you to replace parts of a string value with dynamic content.
 
 ## Installation
 
