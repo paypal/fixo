@@ -1,0 +1,8 @@
+{
+    "single": "{random}",
+    "multiple": "pre-{random}-{random}-post",
+    "alpha": "{random-alpha}",
+    "numeric": "{random-numeric}",
+    "numeric_5": "{random-numeric-5}",
+    "unknown": "{unknown}"
+}

@@ -1,0 +1,25 @@
+{
+    "master": {
+        "profile": {
+            "name": "Walter Mitty"
+        },
+        "name": "get:profile.name",
+        "visa": "include:card.visa",
+        "bankName": "include:nested/bank.name",
+        "wallet": {
+            "card": {
+                "visa": "get:visa",
+                "amex": "include:card.amex",
+                "diners": "include:card.diners"
+             }
+        },
+        "cards": ["include:card.visa", "include:card.amex", "include:card.diners"],
+        "cards_obj": "include:card",
+        "name_GB": "get.GB:name",
+        "visa_GB": "include.GB:card.visa",
+        "unknown": "include:card.unknown"
+    },
+    "GB": {
+        "name": "William"
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "name": "Standard Chartered",
+    "address": {
+        "line_1": "Big Data Inc",
+        "line_2": "80 Rainbow Ave",
+        "city": "San Francisco",
+        "state": "CA",
+        "zip": "123456",
+        "country": "USA"
+    }
+}

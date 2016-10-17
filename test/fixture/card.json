@@ -1,0 +1,62 @@
+{
+    "master": {
+        "default": {
+            "expiry_date": "08/18",
+            "cvv": "123",
+            "payload": "include:nested/payload"
+        },
+        "visa": {
+             "account_number": "4213423432432234",
+             "issuer_bank": {
+                 "name": "Standard Chartered",
+                 "country": "US"
+             }
+        },
+        "amex": {
+             "account_number": "344651926666442"
+        },
+        "diners": {
+            "account_number": "30427303813249"
+        }
+    },
+    "en": {
+        "default": {
+            "en_default": "en default"
+        },
+        "visa": {
+            "en_visa": "en visa"
+        }
+    },
+    "GB": {
+        "default": {
+            "start_date": "01/14"
+        },
+        "visa": {
+            "account_number": "0000000000000000",
+            "issuer_bank": {
+                "country": "GB"
+            },
+            "profile": "GB",
+            "lang": "include:nested/locales.lang"
+        },
+        "switch": {}
+    },
+    "GB-en": {
+        "default": {
+            "start_date": "01/12",
+            "gb_en_default": "gb en default"
+        },
+        "visa": {
+            "account_number": "1111111111111111",
+            "profile": "GB-en",
+            "gb_en_visa": "gb en visa"
+        },
+        "switch": {}
+    },
+    "GB-en-dev": {
+        "visa": {
+            "account_number": "2222222222222222",
+            "profile": "GB-en-dev"
+        }
+    }
+}

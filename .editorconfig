@@ -1,0 +1,16 @@
+# More information at http://EditorConfig.org
+
+[*]
+indent_style = space
+indent_size = 4
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+
+[**.js]
+space_after_anon_function = true
+
+[**.md]
+trim_trailing_whitespace = false
+indent_style = space
+indent_size = 2

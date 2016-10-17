@@ -1,0 +1,41 @@
+{
+    "name": "fixo",
+    "version": "0.6.0",
+    "description": "Inheritable and composable JSON file reader for Node.js",
+    "main": "index.js",
+    "scripts": {
+        "test": "mocha",
+        "watch": "mocha -w",
+        "lint": "eslint **/*.js"
+    },
+    "author": "Herryanto Siatono <herryanto@gmail.com>",
+    "licenses": [{
+        "type": "Apache 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+    }],
+    "homepage": "https://github.com/paypal/fixo",
+    "repostiory": {
+        "type": "git",
+        "url": "https://github.com/paypal/fixo"
+    },
+    "keywords": [
+        "json",
+        "inheritable",
+        "composable",
+        "dynamic",
+        "config",
+        "fixtures"
+    ],
+    "dependencies": {
+        "bluebird": "^2.9.0",
+        "debug": "^2.2.0",
+        "lodash": "^3.6.0"
+    },
+    "devDependencies": {
+        "chai": "^3.5.0",
+        "eslint": "^2.3.0",
+        "eslint-config-airbnb": "^6.2.0",
+        "mocha": "^2.4.5",
+        "proxyquire": "^1.7.4"
+    }
+}

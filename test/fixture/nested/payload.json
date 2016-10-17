@@ -1,0 +1,5 @@
+{
+    "master": {
+        "lang": "include:nested/locales.lang"
+    }
+}
