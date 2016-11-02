@@ -1,6 +1,6 @@
 # fixo
 
-Fixo is an extension to JSON parser, it allows you create inheritable and composable JSON objects.
+Fixo is an extension to JSON parser, it allows you to create inheritable and composable JSON objects.
 
 You could use Fixo for configuration files, test fixtures and other cases when you need to create complex objects with dynamic content.
 
