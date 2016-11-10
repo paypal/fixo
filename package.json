@@ -22,7 +22,7 @@
         "json",
         "extend",
         "inherit",
-        "composable",
+        "compose",
         "dynamic",
         "config",
         "fixtures"
