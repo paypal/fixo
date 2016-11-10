@@ -20,7 +20,8 @@
     },
     "keywords": [
         "json",
-        "inheritable",
+        "extend",
+        "inherit",
         "composable",
         "dynamic",
         "config",
