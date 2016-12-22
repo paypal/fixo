@@ -28,7 +28,7 @@ var fixo = Fixo({
 });
 
 // Load object
-fixo.load('card', function(card) { ... });
+fixo.load('card', function(err, card) { ... });
 
 // Or with Promise
 fixo.load('card').then(function(card) { ... });
