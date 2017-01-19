@@ -1,12 +1,13 @@
 {
     "master": {
+        // Comments allowed
         "default": {
             "expiry_date": "08/18",
             "cvv": "123",
             "payload": "include:nested/payload"
         },
         "visa": {
-             "account_number": "4213423432432234",
+             "account_number": "4213423432432234" /* comments allowed*/,
              "issuer_bank": {
                  "name": "Standard Chartered",
                  "country": "US"

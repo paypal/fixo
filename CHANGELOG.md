@@ -1,3 +1,6 @@
+## v0.6.1 (19 Jan 2017)
+* Support JSON comments
+
 ## v0.6.0 (14 Sep 2016)
 * Rename baseDir options to srcDir
 * Set default srcDir to current working directory
