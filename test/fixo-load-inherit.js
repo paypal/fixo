@@ -76,10 +76,30 @@ describe('@fixo-load-inherit: Ineritance and Override', function () {
             }).catch(done);
         });
 
-        it('should return an object which inherits from GB, en, and GB-en profiles',
+        it('should return an object that inherits from GB, en, and GB-en profiles',
             function (done) {
                 fixo.load('card', 'GB-en-dev').then(function (card) {
                     assert.equal(card.visa.account_number, '2222222222222222');
+                    assert.deepEqual(card.visa.issuer_bank, {
+                        name: 'Standard Chartered',
+                        country: 'GB'
+                    });
+                    assert.equal(card.visa.en_default, 'en default');
+                    assert.equal(card.visa.gb_en_default, 'gb en default');
+                    assert.equal(card.visa.en_visa, 'en visa');
+                    assert.equal(card.visa.gb_en_visa, 'gb en visa');
+                    assert.equal(card.amex.en_default, 'en default');
+                    assert.equal(card.amex.gb_en_default, 'gb en default');
+                    assert.isUndefined(card.amex.en_visa);
+                    assert.isUndefined(card.amex.gb_en_visa);
+                    done();
+                }).catch(done);
+            });
+
+        it('should inherit from profiles found in hierarchy even if the full profile is not found',
+            function (done) {
+                fixo.load('card', 'GB-en-prod').then(function (card) {
+                    assert.equal(card.visa.account_number, '1111111111111111');
                     assert.deepEqual(card.visa.issuer_bank, {
                         name: 'Standard Chartered',
                         country: 'GB'

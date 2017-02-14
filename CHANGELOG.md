@@ -1,3 +1,6 @@
+## v0.6.2 (14 Feb 2017)
+* Fix object inheritance does not work if full profile is not defined
+
 ## v0.6.1 (19 Jan 2017)
 * Support JSON comments
 
